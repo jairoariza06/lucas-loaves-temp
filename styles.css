@@ -1,0 +1,256 @@
+
+/* Restart CSS rules */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #F2C57C;
+    color: #fff;
+    height: 120px;
+}
+
+.logo-container {
+    display: flex;          /* To put aligned the 2 elements of the header in the same row */
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 160px;
+    height: auto;
+    padding-left: 40px;
+    padding-top: 0px;
+}
+
+.logo-container h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color:#d2691e;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+
+
+
+    text-align: center;
+    font-size: 60px;
+}
+
+
+/* Navigation Styles */
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #F2C57C;
+}
+
+nav a {
+    padding-inline: 15px;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #d2691e;
+    transition: color 0.3s, background-color 0.3s; /* Add transition for smooth color change */
+}
+
+nav a:hover {
+    color: #000000;
+    background-color: #fff; /* Change background color on hover */
+}
+
+
+/* Panoramic Image Styles */
+    .background-section {
+        position: relative; /* Ensure the background section is positioned relative */
+        margin-left: 20%;
+        width:80%; /* Adjust this according to your layout */
+        height: 400px; /* Adjust this according to your layout */
+        background-image: url("https://images.crowdspring.com/blog/wp-content/uploads/2023/05/16174534/bakery-hero.png"); /* Specify the path to your image */
+        background-size: cover; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+.background-overlay {
+    position: absolute; /* Position the overlay layer relative to the background section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay color with 50% opacity */
+}
+
+/* Sidebar Styles */
+
+aside {
+    float: left;
+    width: 20%;
+    height: 100%; /* Set height to 100% to fill the available space */
+    background-color: #f4f4f4;
+    padding: 20px; /* Add padding for spacing */
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+aside h3 {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 20px; /* Increase padding for spacing */
+    font-size: 24px; /* Adjust font size */
+    color: #333; /* Darken text color */
+    border-bottom: 2px solid #ddd; /* Add a border bottom for visual separation */
+}
+
+aside ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+aside li {
+    padding: 10px 0; /* Add vertical padding for list items */
+}
+
+aside a {
+    display: block; /* Make links block-level for full width */
+    color: #000000; /* Adjust link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+aside a:hover {
+    color: #666; /* Darken link color on hover */
+}
+
+
+/* Main Content Styles */
+
+.main-content {
+    position: relative; /* Ensure the main content is positioned relative */
+    z-index: 1; /* Ensure the main content appears above the overlay layer */
+    padding: 20px; /* Add padding to the main content */
+    color: #fff; /* Set text color to white */
+    font-size: 200px;
+}
+
+.main-content h2 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 10px;
+    /* background-color: #f8f8f8; Background color */
+    padding: 10px; /* Padding to create space around the text */
+
+}
+
+.main-content p {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+/* Space Style */
+.space{
+    width: 100%;
+    height: 40px;
+    background-color: #f4f4f4;
+}
+
+
+/* Event Type Squares */
+
+.all-types1{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.all-types2{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    padding-bottom: 100px;
+}
+
+.buttons {
+    border: solid;
+    border-width: 1px;
+    border-color: #D3D3D3;
+    border-radius: 4px;
+}
+
+.product-type {
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.product-type p {
+    color: #000000;
+    font: small-caps 25px impact;
+    margin: 10px;
+}
+
+
+/* Event Type Icons */
+.product-type-icon {
+    width: 400px;
+    height: 240px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.product-type-icon.classicpastries {
+    background-image: url('https://www.foodandwine.com/thmb/Q1XB1RqbH7c7i5PvCh9KEBUIljo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pain-au-chocolat-FT-RECIPE0920-7bc1bc748d1c4589b86907da5aa70caf.jpg'); /* Replace 'path/to/wedding-icon.png' with the actual path to your wedding icon image */
+    border-radius: 5px;
+    background-position: center;
+}
+.product-type-icon.artisanbreadselection {
+    background-image: url('https://fasteasybread.com/wp-content/uploads/2021/03/Artisan-Variety-Bread-scaled.jpg'); /* Replace 'path/to/party-icon.png' with the actual path to your party icon image */
+}
+.product-type-icon.desserts {
+    background-image: url('https://www.foodandwine.com/thmb/e5r2eV_mV_RPbemDh0hhjAyDh4M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/recipehd0515-brownie-cake-sundaes-with-pecan-ice-cream-balls-ee5103270d9c4f3bb57add4b508ead30.jpg'); /* Replace 'path/to/entrepreneur-icon.png' with the actual path to your entrepreneur icon image */
+}
+.product-type-icon.seasonal {
+    background-image: url('https://www.weaverstreetmarket.coop/wp-content/uploads/2022/10/wsm_HotCrossBuns-scaled.jpg'); /* Replace 'path/to/big-events-icon.png' with the actual path to your big events icon image */
+}
+.product-type-icon.healthy {
+    background-image: url('https://images-prod.healthline.com/hlcmsresource/images/AN_images/healthiest-bread-1296x728-feature.jpg'); /* Replace 'path/to/special-effects-icon.png' with the actual path to your special effects icon image */
+}
+.product-type-icon.signature {
+    background-image: url('https://i0.wp.com/cooktildelicious.com/wp-content/uploads/2017/05/sproutedwheat1.jpg?resize=780%2C522&ssl=1'); /* Replace 'path/to/old-fashioned-icon.png' with the actual path to your old-fashioned icon image */
+}
+
+
+
+
+
+
+/* Footer Styles */
+
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    background-color: #F2C57C; /* Background color */
+    color: #fff; /* Text color */
+    padding: 14px; /* Padding to create space around content */
+    text-align: center; /* Center-align text */
+}
+
+
+.arriba{
+    position: fixed;
+
+}
